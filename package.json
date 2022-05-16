@@ -1,0 +1,15 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "\"Projet 3 Openclassrooms Ohmyfood\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"htts://github.com/KylianVid/Openclassrooms_Ohmyfood.git\""
+  },
+  "author": "\"Kylian Vidaman\"",
+  "license": "ISC"
+}
