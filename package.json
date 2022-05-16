@@ -4,7 +4,7 @@
   "description": "\"Projet 3 Openclassrooms Ohmyfood\"",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/styles.css --style expanded",
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css --style expanded",
     "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
