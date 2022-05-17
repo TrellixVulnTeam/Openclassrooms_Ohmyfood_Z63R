@@ -14,6 +14,13 @@ p {
   font-family: "roboto", sans-serif;
 }
 
+.btn {
+  font-family: "shrikhand", sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  color: #FFF;
+}
+
 body {
   margin: 0;
 }
@@ -33,7 +40,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
   border-top: 1px solid #F2F2F2;
   box-shadow: inset 0px 2px 5px #bfbfbf;
 }
@@ -42,7 +49,7 @@ header img {
   font-size: medium;
 }
 #localisation h1 {
-  margin: 2%;
+  margin: 4% 4% 4% 2%;
   font-size: medium;
 }
 
@@ -51,20 +58,22 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
+  padding: 4% 0 4% 0;
+  background-color: #F2F2F2;
 }
 nav h1 {
   width: 60%;
+  text-align: center;
 }
 nav p {
   width: 70%;
+  text-align: center;
 }
 nav .btn {
-  font: large "shrikhand" bolder;
   display: flex;
   justify-content: center;
   width: 50%;
-  margin: 2%;
+  margin: 4%;
   padding: 10px;
   border: 1px solid #9356DC;
   background-color: #9356DC;
