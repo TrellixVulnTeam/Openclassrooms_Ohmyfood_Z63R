@@ -1,5 +1,6 @@
-@import "./base/police";
 @import "./utils/variables";
+@import "./base/police";
+
 
 body{
     margin: 0;
@@ -28,7 +29,7 @@ header {
         font-size: medium;
     }
     h1 {
-        margin: 2%;
+        margin: 4% 4% 4% 2%;
         font-size: medium;
     }
 }
@@ -38,19 +39,21 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    padding: 4% 0 4% 0;
+    background-color: $colour-grey;
     h1 {
         width: 60%;
+        text-align: center;
     }
     p {
         width: 70%;
+        text-align: center;
     }
     .btn {
-        font-size: medium;
         display: flex;
         justify-content: center;
         width: 50%;
-        margin: 2%;
+        margin: 4%;
         padding: 10px;
         border: 1px solid $colour-primary;
         background-color: $colour-primary;

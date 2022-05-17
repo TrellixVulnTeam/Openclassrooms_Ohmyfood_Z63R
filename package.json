@@ -13,5 +13,8 @@
   },
   "author": "\"Kylian Vidaman\"",
   "license": "ISC",
-  "browserlist": "last 4 versions"
+  "browserlist": "last 4 versions",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }

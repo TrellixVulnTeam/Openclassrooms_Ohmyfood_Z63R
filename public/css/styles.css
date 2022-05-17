@@ -14,13 +14,6 @@ p {
   font-family: "roboto", sans-serif;
 }
 
-.btn {
-  font-family: "shrikhand", sans-serif;
-  font-size: medium;
-  font-weight: bold;
-  color: #FFF;
-}
-
 body {
   margin: 0;
 }
@@ -70,6 +63,7 @@ nav p {
   text-align: center;
 }
 nav .btn {
+  font-size: medium;
   display: flex;
   justify-content: center;
   width: 50%;
