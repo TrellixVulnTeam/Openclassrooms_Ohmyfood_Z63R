@@ -25,8 +25,12 @@
     src: url('Shrikhand-Regular.otf') format('otf');
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'shrikhand', sans-serif;
+}
+
+h2 {
+    margin-left: 5%;
 }
 
 p {
@@ -38,4 +42,10 @@ p {
     font-size: medium;
     font-weight: bold;
     color: $colour-white; 
+}
+
+li {
+    font-family: 'shrikhand', sans-serif;
+    font-size: large;
+    font-weight: bold;
 }

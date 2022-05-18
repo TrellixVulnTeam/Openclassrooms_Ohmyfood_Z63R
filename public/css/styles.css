@@ -6,12 +6,29 @@
   font-family: "shrikhand";
   src: url("Shrikhand-Regular.otf") format("otf");
 }
-h1 {
+h1, h2, h3 {
   font-family: "shrikhand", sans-serif;
+}
+
+h2 {
+  margin-left: 5%;
 }
 
 p {
   font-family: "roboto", sans-serif;
+}
+
+.btn {
+  font-family: "shrikhand", sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  color: #FFF;
+}
+
+li {
+  font-family: "shrikhand", sans-serif;
+  font-size: large;
+  font-weight: bold;
 }
 
 body {
@@ -51,10 +68,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4% 0 4% 0;
+  padding: 4% 0 8% 0;
+  margin: 0 0 5% 0;
   background-color: #F2F2F2;
 }
-nav h1 {
+nav h2 {
   width: 60%;
   text-align: center;
 }
@@ -63,15 +81,124 @@ nav p {
   text-align: center;
 }
 nav .btn {
-  font-size: medium;
   display: flex;
   justify-content: center;
-  width: 50%;
   margin: 4%;
-  padding: 10px;
+  padding: 20px 10px 20px 10px;
+  width: 50%;
   border: 1px solid #9356DC;
   background-color: #9356DC;
+  border-radius: 40px;
+}
+
+#fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0 10% 0;
+}
+#fonctionnement ul.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+#fonctionnement ul.list > li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  margin: 10px;
+  width: 85%;
+  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 20px;
+  box-shadow: 3px 5px 10px #d9d9d9;
+}
+#fonctionnement ul.list > li i {
+  font-size: 25px;
+  margin: 0 10% 0 10%;
+  color: #737373;
+}
+
+#liste_restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+}
+#liste_restaurants h2 {
+  margin-top: 15%;
+}
+
+.liste_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block_restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 0 solid #FFF;
+  background-color: #FFF;
+  border-radius: 20px;
+}
+
+.block_img {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.block_img--paletteGout {
+  background: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat;
+}
+.block_img--noteEnchantee {
+  background: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat;
+}
+.block_img--laFrancaise {
+  background: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat;
+}
+.block_img--deliceSens {
+  background: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") no-repeat;
+}
+
+.popup_new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: "roboto", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  color: #278870;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  border-radius: 2px;
+}
+.popup_new__disable {
+  display: none;
+}
+
+.block_description {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+}
+.description h3 {
+  margin: 5px 0 2% 5%;
 }
 
 /*# sourceMappingURL=styles.css.map */
