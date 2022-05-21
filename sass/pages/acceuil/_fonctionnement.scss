@@ -1,0 +1,28 @@
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 10% 0;
+    ul.list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5% ;
+        &> li {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding: $padding-btn;
+            margin: 10px;
+            width: 85%;
+            border: 1px solid $colour-grey;
+            background-color: $colour-grey;
+            border-radius: 20px;
+            box-shadow: 3px 5px 10px darken($colour-grey, 10%);
+            i {
+                font-size: 25px;
+                margin: 0 10% 0 10%;
+                color: darken($colour-grey,50%);
+            }
+        }
+    }
+}

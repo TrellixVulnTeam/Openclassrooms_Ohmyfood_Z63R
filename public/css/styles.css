@@ -31,22 +31,35 @@ li {
   font-weight: bold;
 }
 
+a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "robot", sans-serif;
+}
+
+i {
+  font-size: 25px;
+}
+
+span {
+  font-family: "roboto", sans-serif;
+  font-size: medium;
+}
+
 body {
   margin: 0;
 }
 
-header {
+#accueil header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4% 0 2% 0;
+  padding: 4% 0 3% 0;
 }
-header img {
-  display: flex;
+#accueil header img {
   width: 40%;
 }
-
-#localisation {
+#accueil #localisation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,16 +67,15 @@ header img {
   border-top: 1px solid #F2F2F2;
   box-shadow: inset 0px 2px 5px #bfbfbf;
 }
-#localisation i {
+#accueil #localisation i {
   margin: 2%;
   font-size: medium;
 }
-#localisation h1 {
+#accueil #localisation h1 {
   margin: 4% 4% 4% 2%;
   font-size: medium;
 }
-
-nav {
+#accueil nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,15 +84,15 @@ nav {
   margin: 0 0 5% 0;
   background-color: #F2F2F2;
 }
-nav h2 {
+#accueil nav h2 {
   width: 60%;
   text-align: center;
 }
-nav p {
+#accueil nav p {
   width: 70%;
   text-align: center;
 }
-nav .btn {
+#accueil nav btn {
   display: flex;
   justify-content: center;
   margin: 4%;
@@ -90,19 +102,18 @@ nav .btn {
   background-color: #9356DC;
   border-radius: 40px;
 }
-
-#fonctionnement {
+#accueil #fonctionnement {
   display: flex;
   flex-direction: column;
   margin: 10% 0 10% 0;
 }
-#fonctionnement ul.list {
+#accueil #fonctionnement ul.list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 5%;
 }
-#fonctionnement ul.list > li {
+#accueil #fonctionnement ul.list > li {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -114,40 +125,38 @@ nav .btn {
   border-radius: 20px;
   box-shadow: 3px 5px 10px #d9d9d9;
 }
-#fonctionnement ul.list > li i {
+#accueil #fonctionnement ul.list > li i {
   font-size: 25px;
   margin: 0 10% 0 10%;
   color: #737373;
 }
-
-#liste_restaurants {
+#accueil #liste_restaurants {
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
+  padding-bottom: 10%;
 }
-#liste_restaurants h2 {
+#accueil #liste_restaurants h2 {
   margin-top: 15%;
 }
-
-.liste_block {
+#accueil .liste_block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.block_restaurant {
+#accueil .block_restaurant {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
+  margin-bottom: 4%;
   border: 0 solid #FFF;
   background-color: #FFF;
   border-radius: 20px;
 }
-
-.block_img {
+#accueil .block_img {
   display: flex;
   width: 100%;
   height: 200px;
@@ -156,20 +165,27 @@ nav .btn {
   background-size: cover;
   position: relative;
 }
-.block_img--paletteGout {
+#accueil .block_img--paletteGout {
   background: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-.block_img--noteEnchantee {
+#accueil .block_img--noteEnchantee {
   background: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-.block_img--laFrancaise {
+#accueil .block_img--laFrancaise {
   background: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-.block_img--deliceSens {
+#accueil .block_img--deliceSens {
   background: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-
-.popup_new {
+#accueil .popup_new {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -183,22 +199,188 @@ nav .btn {
   background-color: #99E2D0;
   border-radius: 2px;
 }
-.popup_new__disable {
+#accueil .popup_new__disable {
   display: none;
 }
-
-.block_description {
+#accueil .block_description {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+#accueil .block_description i {
+  font-size: 25px;
+  margin-right: 5%;
+}
+#accueil .description {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+#accueil .description h3 {
+  font-size: large;
+  margin: 4% 0 1% 4%;
+}
+#accueil .description p {
+  font-size: large;
+  margin: 1% 0 4% 4%;
+}
+#accueil footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0 0 5%;
+  background-color: #333333;
+}
+#accueil footer menu {
+  position: relative;
+  top: 210px;
+}
+#accueil footer img {
+  width: 30%;
+  padding-bottom: 4%;
+  color: #FFF;
+}
+#accueil .link {
+  margin-bottom: 2%;
+}
+#accueil .link i {
+  font-size: 14px;
+  width: 14px;
 }
 
-.description {
+#la_palette_du_gout header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0 3% 0;
 }
-.description h3 {
-  margin: 5px 0 2% 5%;
+#la_palette_du_gout header img {
+  width: 40%;
+}
+#la_palette_du_gout .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#la_palette_du_gout .menu__bg {
+  width: 100%;
+  height: 250px;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+}
+#la_palette_du_gout .menu__bg--paletteGout {
+  background: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#la_palette_du_gout .menu__bg--noteEnchantee {
+  background: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#la_palette_du_gout .menu__bg--laFrancaise {
+  background: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#la_palette_du_gout .menu__bg--deliceSens {
+  background: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#la_palette_du_gout .menu__commande {
+  position: relative;
+  top: 210px;
+  width: 100%;
+  border: 0px solid #FFF;
+  border-radius: 40px 40px 0 0;
+  background-color: #f7f7f7;
+}
+#la_palette_du_gout .menu__commande__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  /* & h1 {
+
+  } */
+}
+#la_palette_du_gout .menu__commande__title i {
+  margin-right: 10%;
+}
+#la_palette_du_gout .menu__commande__liste {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+#la_palette_du_gout .menu__commande__liste p {
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+#la_palette_du_gout .menu .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border: 0px solid #FFF;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #99E2D0;
+  background-color: #FFF;
+  padding: 2%;
+  margin-bottom: 4%;
+}
+#la_palette_du_gout .menu .block__content {
+  display: flex;
+  flex-direction: column;
+}
+#la_palette_du_gout .menu .block__content__title {
+  font-weight: bold;
+  margin: 4px 0 4px 5px;
+}
+#la_palette_du_gout .menu .block__content__subtitle {
+  margin: 4px 0 4px 5px;
+}
+#la_palette_du_gout .menu .block__prix {
+  display: flex;
+  align-items: flex-end;
+  margin: 4px 10px 4px 0;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+}
+#la_palette_du_gout .menu .btn {
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+  padding: 20px 10px 20px 10px;
+  width: 50%;
+  border: 1px solid #9356DC;
+  background-color: #9356DC;
+  border-radius: 40px;
+  justify-content: center;
+}
+#la_palette_du_gout footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0 0 5%;
+  background-color: #333333;
+}
+#la_palette_du_gout footer menu {
+  position: relative;
+  top: 210px;
+}
+#la_palette_du_gout footer img {
+  width: 30%;
+  padding-bottom: 4%;
+  color: #FFF;
+}
+#la_palette_du_gout .link {
+  margin-bottom: 2%;
+}
+#la_palette_du_gout .link i {
+  font-size: 14px;
+  width: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */

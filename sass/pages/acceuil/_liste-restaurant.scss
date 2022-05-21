@@ -1,0 +1,102 @@
+#liste_restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: $colour-grey;
+    padding-bottom: 10%;
+    h2 {
+        margin-top: 15%;
+    }
+}
+
+.liste_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_restaurant {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 4%;
+    border: 0 solid $colour-white;
+    background-color: $colour-white;
+    border-radius: 20px;
+}
+
+.block_img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: $img-radius;
+    &--paletteGout{
+        background: url('/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &--noteEnchantee{
+        background: url('/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &--laFrancaise{
+        background: url('/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &--deliceSens{
+        background: url('/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.popup_new {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: 'roboto', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: darken($colour-tertiary, 40%);
+    padding: 5px 10px 5px 10px;
+    margin: 0;
+    border: 1px solid $colour-tertiary;
+    background-color: $colour-tertiary;
+    border-radius: 2px;
+    &__disable {
+        display: none;
+    }
+}
+
+.block_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    i {
+        font-size: 25px;
+        margin-right: 5%;
+    }
+}
+
+.description {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    h3{
+        font-size: large;
+        margin: 4% 0 1% 4%;
+    }
+    p{
+        font-size: large;
+        margin: 1% 0 4% 4%;
+    }
+}

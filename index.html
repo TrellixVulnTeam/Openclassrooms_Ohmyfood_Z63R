@@ -10,7 +10,7 @@
         <script src="https://kit.fontawesome.com/c19087dccf.js" crossorigin="anonymous"></script>
         <title>Ohmyfood</title>
     </head>
-    <body>
+    <body id="accueil">
         <header>
             <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
         </header>            
@@ -36,8 +36,8 @@
         <section id="liste_restaurants">
             <h2>Restaurants</h2>
             <div class="liste_block">
-                <div class="block_restaurant">
-                    <div class="block_img">
+                <a class="block_restaurant" href="la_palette_du_gout.html">
+                    <div class="block_img block_img--paletteGout">
                         <p class="popup_new">Nouveau</p>
                     </div>
                     <div class="block_description">
@@ -47,8 +47,51 @@
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </div>
+                </a>
+                <div class="block_restaurant">
+                    <div class="block_img block_img--noteEnchantee">
+                        <p class="popup_new">Nouveau</p>
+                    </div>
+                    <div class="block_description">
+                        <div class="description">    
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="block_restaurant">
+                    <div class="block_img block_img--laFrancaise">
+                        <p class="popup_new__disable">Nouveau</p>
+                    </div>
+                    <div class="block_description">
+                        <div class="description">    
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="block_restaurant">
+                    <div class="block_img block_img--deliceSens">
+                        <p class="popup_new__disable">Nouveau</p>
+                    </div>
+                    <div class="block_description">
+                        <div class="description">    
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood">
+            <a class="link" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            <a class="link" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            <a class="link" href="#">Mentions légales</a>
+            <a class="link" href="#">Contact</a>
+        </footer>
     </body>
 </html>

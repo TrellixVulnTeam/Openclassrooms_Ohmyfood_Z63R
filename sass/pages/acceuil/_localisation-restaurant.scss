@@ -1,0 +1,16 @@
+#localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darken($colour-grey, 5%);
+    border-top: 1px solid $colour-grey;
+    box-shadow: inset 0px 2px 5px darken($colour-grey, 20%);
+    i {
+        margin: 2%;
+        font-size: medium;
+    }
+    h1 {
+        margin: 4% 4% 4% 2%;
+        font-size: medium;
+    }
+}

@@ -1,0 +1,23 @@
+footer {
+    & menu{
+        position: relative;
+        top: 210px;
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0 0 5%;
+    background-color: darken($colour-grey, 75%);
+    & img {
+        width: 30%;
+        padding-bottom: 4%;
+        color: $colour-white;
+    }
+}
+
+.link {
+    margin-bottom: 2%;
+    & i {
+        font-size: 14px;
+        width: 14px;
+    }
+}
