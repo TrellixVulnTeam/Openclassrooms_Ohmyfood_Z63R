@@ -11,8 +11,10 @@
         <title>Ohmyfood</title>
     </head>
     <body id="accueil">
-        <header>
-            <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
+        <header class="site-header">
+            <div class="site-header__logo">
+                <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
+            </div>
         </header>            
         <div id="localisation">
             <i class="fa-solid fa-location-dot" id="location_dot"></i> 
@@ -22,7 +24,7 @@
             <h2>Réservez le menu qui vous convient</h1>     
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <div class="btn">
-               Explorer nos restaurants
+                Explorer nos restaurants
             </div>
         </nav>
         <section id="fonctionnement">
@@ -34,55 +36,63 @@
             </ul>
         </section>
         <section id="liste_restaurants">
-            <h2>Restaurants</h2>
+            <h1>Restaurants</h1>
             <div class="liste_block">
-                <a class="block_restaurant" href="la_palette_du_gout.html">
-                    <div class="block_img block_img--paletteGout">
-                        <p class="popup_new">Nouveau</p>
-                    </div>
-                    <div class="block_description">
-                        <div class="description">    
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </a>
                 <div class="block_restaurant">
-                    <div class="block_img block_img--noteEnchantee">
-                        <p class="popup_new">Nouveau</p>
-                    </div>
-                    <div class="block_description">
-                        <div class="description">    
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
+                    <a href="la_palette_du_gout.html">
+                        <div class="block_img block_img--paletteGout">
+                            <p class="popup_new">Nouveau</p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
+                        <div class="block_description">
+                            <div class="description">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>  
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
                 </div>
                 <div class="block_restaurant">
-                    <div class="block_img block_img--laFrancaise">
-                        <p class="popup_new__disable">Nouveau</p>
-                    </div>
-                    <div class="block_description">
-                        <div class="description">    
-                            <h3>À la française</h3>
-                            <p>Cité Rouge</p>
+                    <a href="la_note_enchantee.html">
+                        <div class="block_img block_img--noteEnchantee">
+                            <p class="popup_new">Nouveau</p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
+                        <div class="block_description">
+                            <div class="description">    
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>    
                 </div>
                 <div class="block_restaurant">
-                    <div class="block_img block_img--deliceSens">
-                        <p class="popup_new__disable">Nouveau</p>
-                    </div>
-                    <div class="block_description">
-                        <div class="description">    
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
+                    <a href="a_la_francaise.html">
+                        <div class="block_img block_img--laFrancaise">
+                            <p class="popup_new__disable">Nouveau</p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
+                        <div class="block_description">
+                            <div class="description">    
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="block_restaurant">
+                    <a href="le_delice_des_sens.html">
+                        <div class="block_img block_img--deliceSens">
+                            <p class="popup_new__disable">Nouveau</p>
+                        </div>
+                        <div class="block_description">
+                            <div class="description">    
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>

@@ -1,9 +1,22 @@
-header {
+.site-header {
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 4% 0 3% 0;
-    & img {
-        width: 40%;
+    &__btn-home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        & i {
+            width: 20%;
+        }
     }
-}
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        & img {
+        width: 40%;
+        }
+    }
+}    

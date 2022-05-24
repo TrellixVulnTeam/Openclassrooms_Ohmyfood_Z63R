@@ -8,22 +8,17 @@ nav {
     background-color: $colour-grey;
     & h2 {
         width: 60%;
+        margin-bottom: 2%;
+        margin-left: 0;
         text-align: center;
     }
     & p {
         width: 70%;
+        margin-top: 2%;
         text-align: center;
     }
-    
-    & btn {
-        display: flex;
-        justify-content: center;
-        margin: 4%;
-        padding: $padding-btn;
-        width: 50%;
-        border: 1px solid $colour-primary;
-        background-color: $colour-primary;
-        border-radius: 40px;
-    }
-    
+}
+
+.btn {
+    @include btn($colour-primary)
 }
