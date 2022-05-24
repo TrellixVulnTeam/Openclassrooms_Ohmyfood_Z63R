@@ -9,20 +9,7 @@
     }
     &__heart {
         width: 10%;
-        color: $colour-black;
-        /* & i {   
-            &::before {
-                content: "\f004";
-                font-weight: bold;
-                transition: color 1s ease-out;
-                opacity: 0;
-            }
-            :active::before{
-                opacity: 1;
-                color: red;
-                cursor: pointer;
-            }
-        }  */    
+        color: $colour-black;   
     }
     &--purple {
         border: 0px solid;

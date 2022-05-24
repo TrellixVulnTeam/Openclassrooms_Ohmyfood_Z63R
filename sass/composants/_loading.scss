@@ -12,12 +12,29 @@
             content: "";
             height: 200px;
             width: 200px;
-            
             border: 40px solid $colour-secondary;
             border-top-color: $colour-primary;
             border-radius: 50%;
             opacity: 1;
             animation: loading-spinner $prog-load-spin-dur $prog-load-spin-delay both cubic-bezier(.81,.35,.6,1) ;
+        }
+    }
+    &__list {
+        &__block {
+            position: relative;
+            opacity: 0;
+            top: 50px;
+            animation: loading-list $list-block-dur $list-block-delay both ease 1;
+            transform-origin: center bottom;
+            &--b2 {
+                animation-delay: $list-block-delay * 2;
+            }
+            &--b3 {
+                animation-delay: $list-block-delay * 3;
+            }
+            &--b4 {
+                animation-delay: $list-block-delay * 4;
+            }
         }
     }
 }

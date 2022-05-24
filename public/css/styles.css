@@ -59,19 +59,6 @@ span {
 .btn__heart {
   width: 10%;
   color: #000;
-  /* & i {   
-      &::before {
-          content: "\f004";
-          font-weight: bold;
-          transition: color 1s ease-out;
-          opacity: 0;
-      }
-      :active::before{
-          opacity: 1;
-          color: red;
-          cursor: pointer;
-      }
-  }  */
 }
 .btn--purple {
   border: 0px solid;
@@ -103,11 +90,40 @@ span {
     background-color: #FFF;
   }
 }
+@keyframes loading-list {
+  100% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
 }
 
-#accueil .loading__spinner {
+.site-header {
+  display: flex;
+  padding: 4% 0 3% 0;
+}
+.site-header__btn-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+.site-header__btn-home i {
+  width: 20%;
+}
+.site-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.site-header__logo img {
+  width: 40%;
+}
+
+.loading__spinner {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -117,7 +133,7 @@ body {
   transition: opacity 1000ms ease-in-out;
   background-color: #99E2D0;
 }
-#accueil .loading__spinner::after {
+.loading__spinner::after {
   content: "";
   height: 200px;
   width: 200px;
@@ -125,34 +141,30 @@ body {
   border-top-color: #9356DC;
   border-radius: 50%;
   opacity: 1;
-  animation: loading-spinner 3000ms 150ms both cubic-bezier(0.81, 0.35, 0.6, 1);
+  animation: loading-spinner 1000ms 150ms both cubic-bezier(0.81, 0.35, 0.6, 1);
 }
-#accueil .conteneur {
-  animation: conteneur 0ms 3075ms both ease;
+.loading__list__block {
+  position: relative;
+  opacity: 0;
+  top: 50px;
+  animation: loading-list 2000ms 150ms both ease 1;
+  transform-origin: center bottom;
 }
-#accueil .site-header {
-  display: flex;
-  padding: 4% 0 3% 0;
+.loading__list__block--b2 {
+  animation-delay: 300ms;
 }
-#accueil .site-header__btn-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5%;
+.loading__list__block--b3 {
+  animation-delay: 450ms;
 }
-#accueil .site-header__btn-home i {
-  width: 20%;
+.loading__list__block--b4 {
+  animation-delay: 600ms;
 }
-#accueil .site-header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+
+.conteneur {
+  animation: conteneur 0ms 1150ms both ease;
 }
-#accueil .site-header__logo img {
-  width: 40%;
-}
-#accueil #localisation {
+
+#localisation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,15 +172,16 @@ body {
   border-top: 1px solid #F2F2F2;
   box-shadow: inset 0px 2px 5px #bfbfbf;
 }
-#accueil #localisation i {
+#localisation i {
   margin: 2%;
   font-size: medium;
 }
-#accueil #localisation h1 {
+#localisation h1 {
   margin: 4% 4% 4% 2%;
   font-size: medium;
 }
-#accueil nav {
+
+nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,29 +190,30 @@ body {
   margin: 0 0 5% 0;
   background-color: #F2F2F2;
 }
-#accueil nav h2 {
+nav h2 {
   width: 60%;
   margin-bottom: 2%;
   margin-left: 0;
   text-align: center;
 }
-#accueil nav p {
+nav p {
   width: 70%;
   margin-top: 2%;
   text-align: center;
 }
-#accueil #fonctionnement {
+
+#fonctionnement {
   display: flex;
   flex-direction: column;
   margin: 10% 0 10% 0;
 }
-#accueil #fonctionnement ul.list {
+#fonctionnement ul.list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 5%;
 }
-#accueil #fonctionnement ul.list > li {
+#fonctionnement ul.list > li {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -212,37 +226,41 @@ body {
   box-shadow: 3px 5px 10px #d9d9d9;
   list-style-type: decimal;
 }
-#accueil #fonctionnement ul.list > li i {
+#fonctionnement ul.list > li i {
   font-size: 25px;
   margin: 0 10% 0 10%;
   color: #737373;
 }
-#accueil #fonctionnement ul.list > li:hover {
+#fonctionnement ul.list > li:hover {
   background-color: #e4d5f6;
 }
-#accueil #fonctionnement ul.list > li:hover i {
+#fonctionnement ul.list > li:hover i {
   color: #9356DC;
 }
-#accueil #liste_restaurants {
+
+#liste_restaurants {
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
   padding-bottom: 10%;
 }
-#accueil #liste_restaurants h1 {
+#liste_restaurants h1 {
   margin-top: 15%;
   margin-left: 5%;
 }
-#accueil .liste_block {
+
+.liste_block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#accueil a {
+
+a {
   width: 100%;
 }
-#accueil .block_restaurant {
+
+.block_restaurant {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +271,8 @@ body {
   background-color: #FFF;
   border-radius: 20px;
 }
-#accueil .block_img {
+
+.block_img {
   display: flex;
   width: 100%;
   height: 200px;
@@ -262,27 +281,28 @@ body {
   background-size: cover;
   position: relative;
 }
-#accueil .block_img--paletteGout {
+.block_img--paletteGout {
   background: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#accueil .block_img--noteEnchantee {
+.block_img--noteEnchantee {
   background: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#accueil .block_img--laFrancaise {
+.block_img--laFrancaise {
   background: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#accueil .block_img--deliceSens {
+.block_img--deliceSens {
   background: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#accueil .popup_new {
+
+.popup_new {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -296,111 +316,69 @@ body {
   background-color: #99E2D0;
   border-radius: 2px;
 }
-#accueil .popup_new__disable {
+.popup_new__disable {
   display: none;
 }
-#accueil .block_description {
+
+.block_description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-#accueil .block_description i {
+.block_description i {
   font-size: 25px;
   margin-right: 5%;
 }
-#accueil .description {
+
+.description {
   display: flex;
   flex: 1;
   flex-direction: column;
 }
-#accueil .description h3 {
+.description h3 {
   font-size: large;
   margin: 4% 0 1% 4%;
 }
-#accueil .description p {
+.description p {
   font-size: large;
   margin: 1% 0 4% 4%;
 }
-#accueil footer {
-  display: flex;
-  flex-direction: column;
-  padding: 5% 0 0 5%;
-  background-color: #333333;
-}
-#accueil footer menu {
-  position: relative;
-  top: 210px;
-}
-#accueil footer img {
-  width: 30%;
-  padding-bottom: 4%;
-  color: #FFF;
-}
-#accueil .link {
-  margin-bottom: 2%;
-}
-#accueil .link i {
-  font-size: 14px;
-  width: 14px;
-}
 
-#carte_menu .site-header {
-  display: flex;
-  padding: 4% 0 3% 0;
-}
-#carte_menu .site-header__btn-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5%;
-}
-#carte_menu .site-header__btn-home i {
-  width: 20%;
-}
-#carte_menu .site-header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#carte_menu .site-header__logo img {
-  width: 40%;
-}
-#carte_menu .menu {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f7f7f7;
 }
-#carte_menu .menu__bg {
+.menu__bg {
   width: 100%;
   height: 300px;
   background-position: center center;
   background-size: cover;
   z-index: 1;
 }
-#carte_menu .menu__bg--paletteGout {
+.menu__bg--paletteGout {
   background: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#carte_menu .menu__bg--noteEnchantee {
+.menu__bg--noteEnchantee {
   background: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#carte_menu .menu__bg--laFrancaise {
+.menu__bg--laFrancaise {
   background: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#carte_menu .menu__bg--deliceSens {
+.menu__bg--deliceSens {
   background: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-#carte_menu .menu__commande {
+.menu__commande {
   position: relative;
   bottom: 50px;
   width: 100%;
@@ -409,30 +387,27 @@ body {
   background-color: #f7f7f7;
   z-index: 2;
 }
-#carte_menu .menu__commande__title {
+.menu__commande__title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-left: 5%;
   margin-top: 4%;
-  /* & h1 {
-
-  } */
 }
-#carte_menu .menu__commande__title i {
+.menu__commande__title i {
   margin-right: 10%;
 }
-#carte_menu .menu__commande__liste {
+.menu__commande__liste {
   display: flex;
   flex-direction: column;
   padding: 0 5% 5% 5%;
 }
-#carte_menu .menu__commande__liste p {
+.menu__commande__liste p {
   width: 40px;
   border-bottom: 3px solid #99E2D0;
 }
-#carte_menu .menu .block {
+.menu .block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -444,47 +419,49 @@ body {
   padding: 2%;
   margin-bottom: 4%;
 }
-#carte_menu .menu .block__content {
+.menu .block__content {
   display: flex;
   flex-direction: column;
 }
-#carte_menu .menu .block__content__title {
+.menu .block__content__title {
   font-weight: bold;
   margin: 4px 0 4px 5px;
 }
-#carte_menu .menu .block__content__subtitle {
+.menu .block__content__subtitle {
   margin: 4px 0 4px 5px;
 }
-#carte_menu .menu .block__prix {
+.menu .block__prix {
   display: flex;
   align-items: flex-end;
   margin: 4px 10px 4px 0;
   font-family: "roboto", sans-serif;
   font-weight: bold;
 }
-#carte_menu .menu .btn {
+.menu .btn {
   justify-content: center;
   margin-bottom: 10%;
 }
-#carte_menu footer {
+
+footer {
   display: flex;
   flex-direction: column;
   padding: 5% 0 0 5%;
   background-color: #333333;
 }
-#carte_menu footer menu {
+footer menu {
   position: relative;
   top: 210px;
 }
-#carte_menu footer img {
+footer img {
   width: 30%;
   padding-bottom: 4%;
   color: #FFF;
 }
-#carte_menu .link {
+
+.link {
   margin-bottom: 2%;
 }
-#carte_menu .link i {
+.link i {
   font-size: 14px;
   width: 14px;
 }
