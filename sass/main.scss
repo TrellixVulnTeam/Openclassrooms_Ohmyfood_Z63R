@@ -1,26 +1,25 @@
 @import "./utils/variables";
 @import "./base/police";
-@import "./utils/mixins";
+@import "./composants/btn";
+@import "./utils/keyframes";
 
 body{
     margin: 0;
+    
 }
 
 #accueil {
+    @import "./composants/loading";
     @import "./layout/header";
-
     @import "./pages/acceuil/localisation-restaurant";
     @import "./pages/acceuil/nav";
     @import "./pages/acceuil/fonctionnement";
     @import "./pages/acceuil/liste-restaurant";
-
     @import "./layout/_footer.scss";
 }
 
 #carte_menu{
     @import "./layout/header";
-    
     @import "./pages/menu/menu";
-
     @import "./layout/footer";
 }

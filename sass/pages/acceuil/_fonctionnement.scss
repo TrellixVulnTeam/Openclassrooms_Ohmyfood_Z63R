@@ -14,7 +14,7 @@
             padding: $padding-btn;
             margin: 10px;
             width: 85%;
-            border: 1px solid $colour-grey;
+            border: 0px solid $colour-grey;
             background-color: $colour-grey;
             border-radius: 20px;
             box-shadow: 3px 5px 10px darken($colour-grey, 10%);
@@ -23,6 +23,12 @@
                 font-size: 25px;
                 margin: 0 10% 0 10%;
                 color: darken($colour-grey,50%);
+            }
+            &:hover {
+                background-color: lighten($colour-primary, 30%);
+                i {
+                    color: $colour-primary;
+                }
             }
         }
     }

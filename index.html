@@ -11,97 +11,118 @@
         <title>Ohmyfood</title>
     </head>
     <body id="accueil">
-        <header class="site-header">
-            <div class="site-header__logo">
-                <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
-            </div>
-        </header>            
-        <div id="localisation">
-            <i class="fa-solid fa-location-dot" id="location_dot"></i> 
-            <h1>Paris, Belleville</h1>
+        <div class="loading">
+            <span class="loading__spinner"></span>
         </div>
-        <nav>
-            <h2>Réservez le menu qui vous convient</h1>     
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <div class="btn">
-                Explorer nos restaurants
+        <div class="conteneur">
+            <header class="site-header">
+                <div class="site-header__logo">
+                    <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
+                </div>
+            </header>            
+            <div id="localisation">
+                <i class="fa-solid fa-location-dot" id="location_dot"></i> 
+                <h1>Paris, Belleville</h1>
             </div>
-        </nav>
-        <section id="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <ul class="list">
-                <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-                <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
-                <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
-            </ul>
-        </section>
-        <section id="liste_restaurants">
-            <h1>Restaurants</h1>
-            <div class="liste_block">
-                <div class="block_restaurant">
-                    <a href="la_palette_du_gout.html">
-                        <div class="block_img block_img--paletteGout">
-                            <p class="popup_new">Nouveau</p>
-                        </div>
+            <nav>
+                <h2>Réservez le menu qui vous convient</h1>     
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <div class="btn btn__large btn--purple">
+                    Explorer nos restaurants
+                </div>
+            </nav>
+            <section id="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <ul class="list">
+                    <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+                    <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
+                    <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                </ul>
+            </section>
+            <section id="liste_restaurants">
+                <h1>Restaurants</h1>
+                <div class="liste_block">
+                    <div class="block_restaurant">
+                        <a href="la_palette_du_gout.html">
+                            <div class="block_img block_img--paletteGout">
+                                <p class="popup_new">Nouveau</p>
+                            </div>
+                        </a>
                         <div class="block_description">
                             <div class="description">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>  
+                                <a href="la_palette_du_gout.html">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </a>  
                             </div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="block_restaurant">
-                    <a href="la_note_enchantee.html">
-                        <div class="block_img block_img--noteEnchantee">
-                            <p class="popup_new">Nouveau</p>
-                        </div>
+                            <div class="btn btn__heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="block_restaurant">
+                        <a href="la_note_enchantee.html">
+                            <div class="block_img block_img--noteEnchantee">
+                                <p class="popup_new">Nouveau</p>
+                            </div>
+                        </a>
                         <div class="block_description">
                             <div class="description">    
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
+                                <a href="la_note_enchantee.html">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </a>
                             </div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </a>    
-                </div>
-                <div class="block_restaurant">
-                    <a href="a_la_francaise.html">
-                        <div class="block_img block_img--laFrancaise">
-                            <p class="popup_new__disable">Nouveau</p>
-                        </div>
+                            <div class="btn btn__heart">
+                                    <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="block_restaurant">
+                        <a href="a_la_francaise.html">
+                            <div class="block_img block_img--laFrancaise">
+                                <p class="popup_new__disable">Nouveau</p>
+                            </div> 
+                        </a>
                         <div class="block_description">
                             <div class="description">    
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
+                                <a href="a_la_francaise.html">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </a>
                             </div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="block_restaurant">
-                    <a href="le_delice_des_sens.html">
-                        <div class="block_img block_img--deliceSens">
-                            <p class="popup_new__disable">Nouveau</p>
-                        </div>
+                            <div class="btn btn__heart">
+                                    <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="block_restaurant">
+                        <a href="le_delice_des_sens.html">
+                            <div class="block_img block_img--deliceSens">
+                                <p class="popup_new__disable">Nouveau</p>
+                            </div>
+                        </a>
                         <div class="block_description">
-                            <div class="description">    
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                            <a href="le_delice_des_sens.html">
+                                <div class="description">    
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                            </a>
+                            <div class="btn btn__heart">
+                                    <i class="fa-regular fa-heart"></i>
                             </div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </a>
+                        </div>            
+                    </div>
                 </div>
-            </div>
-        </section>
-        <footer>
-            <img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood">
-            <a class="link" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a class="link" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a class="link" href="#">Mentions légales</a>
-            <a class="link" href="#">Contact</a>
-        </footer>
+            </section>
+            <footer>
+                <img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood">
+                <a class="link" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                <a class="link" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                <a class="link" href="#">Mentions légales</a>
+                <a class="link" href="#">Contact</a>
+            </footer>
+        </div>
     </body>
 </html>

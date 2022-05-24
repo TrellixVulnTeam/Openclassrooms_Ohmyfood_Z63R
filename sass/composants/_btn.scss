@@ -1,0 +1,36 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    padding: $padding-btn;
+    &__large {
+        width: 50%;
+        border-radius: 40px;    
+    }
+    &__heart {
+        width: 10%;
+        color: $colour-black;
+        /* & i {   
+            &::before {
+                content: "\f004";
+                font-weight: bold;
+                transition: color 1s ease-out;
+                opacity: 0;
+            }
+            :active::before{
+                opacity: 1;
+                color: red;
+                cursor: pointer;
+            }
+        }  */    
+    }
+    &--purple {
+        border: 0px solid;
+        background: linear-gradient(-20deg, $colour-primary, $colour-secondary);
+        box-shadow: 1px 3px 3px darken($colour-primary, 10%);
+        &:hover {
+            background: linear-gradient(-20deg, lighten($colour-primary, 5%), lighten($colour-secondary, 2%));
+            box-shadow: 2px 5px 3px darken($colour-primary, 20%);
+        }
+    }
+}

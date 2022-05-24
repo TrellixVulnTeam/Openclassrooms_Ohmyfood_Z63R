@@ -1,0 +1,21 @@
+@keyframes loading-spinner {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes conteneur {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        background-color: #FFF;
+    }
+}

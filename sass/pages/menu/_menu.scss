@@ -93,7 +93,6 @@
         }
     }
     & .btn{
-        @include btn($colour-primary);
         justify-content: center;
         margin-bottom: 10%;
     }

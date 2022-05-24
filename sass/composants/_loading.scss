@@ -1,0 +1,27 @@
+.loading {
+    &__spinner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 1000ms ease-in-out;
+        background-color: $colour-tertiary;
+        &::after{
+            content: "";
+            height: 200px;
+            width: 200px;
+            
+            border: 40px solid $colour-secondary;
+            border-top-color: $colour-primary;
+            border-radius: 50%;
+            opacity: 1;
+            animation: loading-spinner $prog-load-spin-dur $prog-load-spin-delay both cubic-bezier(.81,.35,.6,1) ;
+        }
+    }
+}
+
+.conteneur {
+    animation: conteneur 0ms $conteneur-delay both ease  ;
+}
