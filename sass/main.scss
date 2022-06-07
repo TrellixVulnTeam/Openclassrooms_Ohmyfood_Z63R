@@ -2,9 +2,11 @@
 @import "./base/police";
 @import "./composants/btn";
 @import "./utils/keyframes";
+@import "./utils/hover";
 
 body{
     margin: 0;
+    background-color: #F2F2F2;
 }
 
 @import "./layout/header";

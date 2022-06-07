@@ -1,7 +1,4 @@
 @keyframes loading-spinner {
-    0% {
-        opacity: 0;
-    }
     25% {
         opacity: 1;
     }
@@ -22,5 +19,6 @@
 @keyframes loading-list {
     100% {
         transform: translateY(-50px);
+        opacity: 1;
     }
 }
