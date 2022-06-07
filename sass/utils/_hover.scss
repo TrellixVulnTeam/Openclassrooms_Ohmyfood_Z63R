@@ -1,0 +1,13 @@
+.anim-languette:hover > .block {
+    width: 80%;
+}
+.anim-languette:hover > .block__check-box {
+    transform: scaleX(1);
+    width: 20%;
+}
+.anim-languette:hover > .block__check-box::after {
+    transform: scaleX(1);
+}
+.anim-languette:hover i {
+    transform: rotate(1turn);
+} 

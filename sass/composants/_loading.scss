@@ -35,9 +35,22 @@
             &--b4 {
                 animation-delay: $list-block-delay * 4;
             }
+            &__add {
+                transform-origin: right;
+                
+               /*  &::after {
+                    content: "";
+                    height: 100%;
+                    width: 5%;
+                    background-color: $colour-tertiary;
+                } */
+            }
         }
     }
+    
 }
+
+
 
 .conteneur {
     animation: conteneur 0ms $conteneur-delay both ease  ;

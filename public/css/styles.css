@@ -141,7 +141,7 @@ body {
   border-top-color: #9356DC;
   border-radius: 50%;
   opacity: 1;
-  animation: loading-spinner 1000ms 150ms both cubic-bezier(0.81, 0.35, 0.6, 1);
+  animation: loading-spinner 3000ms 150ms both cubic-bezier(0.81, 0.35, 0.6, 1);
 }
 .loading__list__block {
   position: relative;
@@ -159,9 +159,18 @@ body {
 .loading__list__block--b4 {
   animation-delay: 600ms;
 }
+.loading__list__block__add {
+  transform-origin: right;
+  /*  &::after {
+       content: "";
+       height: 100%;
+       width: 5%;
+       background-color: $colour-tertiary;
+   } */
+}
 
 .conteneur {
-  animation: conteneur 0ms 1150ms both ease;
+  animation: conteneur 0ms 3150ms both ease;
 }
 
 #localisation {
