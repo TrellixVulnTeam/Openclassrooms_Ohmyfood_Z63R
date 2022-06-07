@@ -8,8 +8,11 @@
         border-radius: 40px;    
     }
     &__heart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 10%;
-        color: $colour-black;   
+        /* margin-right: 10%; */
     }
     &--purple {
         border: 0px solid;
@@ -21,3 +24,24 @@
         }
     }
 }
+
+.empty{
+    display: flex;
+    position: absolute;
+    & i {
+    transition: all 1s cubic-bezier(0.4, 0, 1, 1);
+    }
+}
+
+.full {
+    position: relative;
+    top: 0;
+    right: 0;
+    & i {
+    opacity: 0;
+    transition: all 1s ease;
+    }
+}
+
+
+

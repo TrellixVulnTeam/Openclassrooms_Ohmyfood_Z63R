@@ -11,3 +11,13 @@
 .anim-languette:hover i {
     transform: rotate(1turn);
 } 
+
+.btn__heart:hover {
+    & > .empty i{
+        opacity: 0;
+    }
+    & > .full i {
+        color: $colour-primary;
+        opacity: 1;
+    }
+}
