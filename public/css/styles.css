@@ -197,12 +197,23 @@ span {
 }
 body {
   margin: 0;
-  background-color: #F2F2F2;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 769px) {
+  section {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #F2F2F2;
+  }
 }
 
 .site-header {
   display: flex;
   padding: 4% 0 3% 0;
+  background-color: #F2F2F2;
 }
 .site-header__btn-home {
   display: flex;
@@ -582,6 +593,11 @@ a {
   align-items: center;
   background-color: #F2F2F2;
 }
+@media screen and (min-width: 769px) {
+  .menu {
+    width: 850px;
+  }
+}
 .menu__bg {
   width: 100%;
   height: 300px;
@@ -629,6 +645,16 @@ a {
 .menu__commande__title .btn__heart {
   margin-right: 10%;
 }
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .menu__commande__title .btn__heart i {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu__commande__title .btn__heart i {
+    font-size: 31px;
+  }
+}
 .menu__commande__liste {
   display: flex;
   flex-direction: column;
@@ -637,6 +663,17 @@ a {
 .menu__commande__liste p {
   width: 40px;
   border-bottom: 3px solid #99E2D0;
+}
+.menu__commande__liste__plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .menu__commande__liste__plat {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .menu .btn {
   justify-content: center;
@@ -658,6 +695,12 @@ a {
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .anim-languette {
+    width: 80%;
+    justify-content: left;
+  }
 }
 
 .block {
@@ -754,6 +797,14 @@ footer img {
   padding-bottom: 4%;
   color: #FFF;
 }
+@media screen and (min-width: 769px) {
+  footer {
+    padding: 2% 0 0 2%;
+  }
+  footer img {
+    padding-bottom: 1%;
+  }
+}
 
 .link {
   margin-bottom: 2%;
@@ -764,6 +815,14 @@ footer img {
   width: 14px;
   margin-right: 1%;
   color: #FFF;
+}
+@media screen and (min-width: 769px) {
+  .link {
+    margin-bottom: 2px;
+  }
+  .link i {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

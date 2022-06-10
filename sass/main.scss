@@ -6,7 +6,17 @@
 
 body{
     margin: 0;
-    background-color: #F2F2F2;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid #F2F2F2;
+    }
 }
 
 @import "./layout/header";

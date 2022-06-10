@@ -11,6 +11,13 @@ footer {
         width: 30%;
         padding-bottom: 4%;
         color: $colour-white;
+        
+    }
+    @include desktop {
+        padding: 2% 0 0 2%;
+        & img {
+            padding-bottom: 1%;
+        }
     }
 }
 
@@ -22,5 +29,11 @@ footer {
         width: 14px;
         margin-right: 1%;
         color: $colour-white;
+    }
+    @include desktop {
+        margin-bottom: 2px;
+        & i {
+            font-size: 18px;
+        }
     }
 }
