@@ -7,10 +7,22 @@
     box-shadow: inset 0px 2px 5px darken($colour-grey, 20%);
     i {
         margin: 2%;
-        font-size: medium;
+        font-size: large;
+        @include tablette {
+            font-size: x-large;
+        }
+        @include desktop {
+            font-size: xx-large;
+        }
     }
     h1 {
         margin: 4% 4% 4% 2%;
         font-size: medium;
+        @include tablette {
+            font-size: 24px;
+        }
+        @include desktop {
+            font-size: x-large;
+        }
     }
 }

@@ -11,3 +11,5 @@ $prog-load-spin-delay: 150ms;
 $conteneur-delay: $prog-load-spin-dur + $prog-load-spin-delay;
 $list-block-dur: 2000ms;
 $list-block-delay: 150ms;
+$break-mobile: 425px;
+$break-tablette: 768px;

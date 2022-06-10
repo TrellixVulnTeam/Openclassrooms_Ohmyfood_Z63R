@@ -16,8 +16,11 @@ footer {
 
 .link {
     margin-bottom: 2%;
+    color: $colour-white;
     & i {
         font-size: 14px;
         width: 14px;
+        margin-right: 1%;
+        color: $colour-white;
     }
 }

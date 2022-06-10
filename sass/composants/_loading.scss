@@ -42,7 +42,21 @@
     }  
 }
 
-
+.anim-languette {
+    &:hover > .block {
+        width: 80%;
+    }
+    &:hover > .block__check-box {
+        transform: scaleX(1);
+        width: 20%;
+    }
+    &:hover > .block__check-box::after {
+        transform: scaleX(1);
+    }
+    &:hover i {
+        transform: rotate(1turn);
+    } 
+}
 
 .conteneur {
     animation: conteneur 0ms $conteneur-delay both ease  ;

@@ -1,0 +1,11 @@
+@mixin tablette {
+    @media screen and (min-width: calc($break-mobile + 1px)) and (max-width: $break-tablette) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: calc($break-tablette + 1px)) {
+        @content;
+    }
+}

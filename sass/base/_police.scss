@@ -27,6 +27,13 @@
 
 h1, h2, h3 {
     font-family: 'shrikhand', sans-serif;
+    font-size: 18px;
+    @include tablette {
+        font-size: x-large;
+    }
+    @include desktop {
+        font-size: xx-large;
+    }
 }
 
 h2 {
@@ -35,33 +42,71 @@ h2 {
 
 p {
     font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    @include tablette {
+        font-size: large;
+    }
+    @include desktop {
+        font-size: x-large;
+    }
 }
 
 .btn {
     font-family:'shrikhand', sans-serif;
-    font-size: medium;
     font-weight: bold;
-    color: $colour-white; 
+    color: $colour-white;
+    font-size: 12px;
+    @include tablette {
+        font-size: large;
+    }
+    @include desktop {
+        font-size: x-large;
+    }
 }
 
 li {
     font-family: 'shrikhand', sans-serif;
     font-size: large;
     font-weight: bold;
+    @include tablette {
+        font-size: x-large;
+    }
+    @include desktop {
+        font-size: 30px;
+    }
 }
 
 a {
     color: $colour-black;
     text-decoration: none;
     font-family: 'robot', sans-serif;
+    font-size: 16px;
+    @include tablette {
+        font-size: large;
+    }
+    @include desktop {
+        font-size: 24px;
+    }
 }
 
 i {
-    font-size: 2em;
+    font-size: 1.2em;
     color: black;
+    @include tablette {
+        font-size: 1.3em;
+    }
+    @include desktop {
+        font-size: 1.4em;
+    }
 }
 
 span {
     font-family: 'roboto', sans-serif;
     font-size: medium;
+    @include tablette {
+        font-size: large;
+    }
+    @include desktop {
+        font-size: x-large;
+    }
 }
