@@ -161,7 +161,7 @@
         align-items: center;
         height: 100%;
         width: 0%;
-        background-color: aqua;
+        background-color: $colour-tertiary;
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 1s ease;
