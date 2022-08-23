@@ -56,7 +56,20 @@
     }
     &:hover i {
         transform: rotate(1turn);
-    } 
+    }
+    &:active > .block {
+        width: 80%;
+    }
+    &:active > .block__check-box {
+        transform: scaleX(1);
+        width: 20%;
+    }
+    &:active > .block__check-box::after {
+        transform: scaleX(1);
+    }
+    &:active i {
+        transform: rotate(1turn);
+    }
 }
 
 .conteneur {
