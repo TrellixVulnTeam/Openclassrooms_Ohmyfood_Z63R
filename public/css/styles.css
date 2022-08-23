@@ -755,7 +755,7 @@ a {
   align-items: center;
   height: 100%;
   width: 0%;
-  background-color: aqua;
+  background-color: #99E2D0;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 1s ease;
